@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Login Suite">
+	<test name="Login Scenario">
+		<classes>
+			<class name="demo.basic.TestNGDemo">
+				<methods>
+					<include name="loginTest"></include>
+					<include name="loginTestGetTitle"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Customer Scenario">
+		<classes>
+			<class name="demo.basic.TestNGDemo">
+				<methods>
+					<include name="createCustomer"></include>
+					<include name="editCustomer"></include>
+					<include name="deleteCustomer"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>	
+	
+	<test name="Logout Scenario">
+		<classes>
+			<class name="demo.basic.TestNGDemo">
+				<methods>
+					<include name="logOutTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>	
+	
+</suite>

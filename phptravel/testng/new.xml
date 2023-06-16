@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite First">
+	<test name="TestngFirst">
+		<classes>
+			<class name="demo.basic.TestNGDemo">
+				<methods>
+					<include name="loginTest"></include>
+					<include name="loginTestGetTitle"></include>
+					<include name="logOutTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Successful Login with Valid Credentials">
+		<groups>
+			<run>
+				<include name="customer"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="demo.basic.TestNGDemo"></class>
+			<class name="demo.basic.TestNGDemotwo"></class>
+		</classes>
+	</test>
+</suite>  
+	  

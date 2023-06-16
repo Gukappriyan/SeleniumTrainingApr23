@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Parameter Test]">
+  <test thread-count="5" name="Administrator login(failed)">
+    <parameter name="url_P" value="https://phptravels.net/admin"/>
+    <parameter name="password_P" value="demoadmin"/>
+    <parameter name="username_P" value="admin@phptravels.com"/>
+    <classes>
+      <class name="demo.basic.TestNGParameterDemo">
+        <methods>
+          <include name="logOutTest"/>
+          <include name="closeBrowser"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- demo.basic.TestNGParameterDemo -->
+    </classes>
+  </test> <!-- Administrator login(failed) -->
+</suite> <!-- Failed suite [Parameter Test] -->

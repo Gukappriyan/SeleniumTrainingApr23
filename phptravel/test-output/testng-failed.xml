@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite First]">
+  <test thread-count="5" name="Successful Login with Valid Credentials(failed)">
+    <groups>
+      <run>
+        <include name="customer"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="demo.basic.TestNGDemotwo">
+        <methods>
+          <include name="addPhoto"/>
+        </methods>
+      </class> <!-- demo.basic.TestNGDemotwo -->
+    </classes>
+  </test> <!-- Successful Login with Valid Credentials(failed) -->
+</suite> <!-- Failed suite [Suite First] -->

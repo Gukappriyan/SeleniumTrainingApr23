@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Parameter Test">
+
+ <!-- 
+	<test name="Supplier login">
+		<parameter name="username_P" value="supplier@phptravels.com" />
+		<parameter name="password_P" value="demosupplier" />
+		<parameter name="url_P" value="https://phptravels.net/supplier" />
+		<classes>
+			<class name="demo.basic.TestNGParameterDemo">
+			</class>
+		</classes>
+	</test>
+	 -->
+	<test name="Administrator login">
+		<parameter name="username_P" value="admin@phptravels.com" />
+		<parameter name="password_P" value="demoadmin" />
+		<parameter name="url_P" value="https://phptravels.net/admin" />
+		<classes>
+			<class name="demo.basic.TestNGParameterDemo">
+			</class>
+		</classes>
+	</test>
+	
+	<!--  
+	 
+	<test name="Invalid User">
+		<parameter name="username_P" value="gukan"></parameter>
+		<parameter name="password_P" value="gukan"></parameter>
+		<parameter name="url_P" value="https://phptravels.net/admin"></parameter>
+		<classes>
+			<class name="demo.basic.TestNGParameterDemo">
+			</class>
+		</classes>
+	 	
+	</test>
+	 -->
+</suite> <!-- Suite -->
